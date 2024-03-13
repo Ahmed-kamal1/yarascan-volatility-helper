@@ -17,13 +17,24 @@ The YARAScan_Volatility_Helper enhances the functionality of the Volatility3 fra
 
 The primary usage of the YARAScan_Volatility_Helper script is to enhance the YARA scanning capabilities of the Volatility3 framework by providing the YaraScan plugin with a directory containing multiple YARA rule files. This allows for more comprehensive memory analysis, enabling the detection of a wider range of malicious patterns and indicators of compromise within memory dumps.
 
-## Example Usage:
+## Help Options:
+
+The YARAScan_Volatility_Helper script supports the following command-line options:
+
+- `-h, --help`: Display help message and usage information.
+- `-d, --directory <directory>`: Specify the directory containing YARA rule files.
+- `-f, --file <memory_dump>`: Specify the memory dump file to analyze.
+- `-o, --output <output_file>`: Specify the output file to store the analysis results.
+
+Example usage:
 
 ```bash
+# Display help message and usage information
+./yara_memory_analysis.sh -h
+
 # Analyze a memory dump using the script with default settings
 ./yara_memory_analysis.sh -f memory_dump.mem -d yara_rules_directory
 
 # Specify an output file to store the analysis results
 ./yara_memory_analysis.sh -f memory_dump.bin -d yara_rules_directory -o analysis_results.txt
-
 
