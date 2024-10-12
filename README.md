@@ -36,5 +36,5 @@ Example usage:
 ./yara_memory_analysis.sh -f memory_dump.mem -d yara_rules_directory
 
 # Specify an output file to store the analysis results
-./yara_memory_analysis.sh -f memory_dump.bin -d yara_rules_directory -o analysis_results.txt
+./yara_memory_analysis.sh -f memory_dump.mem -d yara_rules_directory -o analysis_results.txt
 
